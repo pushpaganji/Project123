@@ -1,0 +1,35 @@
+Testcases  of the  compose function in Gmail and sending an email with an attachment. 
+
+
+1. Verify that once goto Gmail login page, the cursor is on the email ID textbox.
+2. Verify by entering valid email ID and password
+3. Verify login button after entering email ID and password
+4. Verify compose button, a small window page should be opened once clicked on compose
+5. Verify that user can enter email Ids in ‘To’, ‘cc’ and ‘bcc’ sections and
+ also user should get suggestions while typing the emailds based on the existing emailIds in user’s email list.
+6. Verify that the user can enter multiple emailIds in ‘To’, ‘cc’ and ‘bcc’ sections.
+7. Verify that the user can type Subject line in the ‘Subject’ textbox.
+8. Verify that the user can type the text in the email-body section.
+9. Verify that the user can attach file as an attachement to the email.
+10. Verify that the user can add images in the email.
+11. Verify the send button after entering all details. 
+12. Verify the mail gets delivered to receivers.
+13. Verify that mail can be sent to non-gmail emailIds also.
+
+
+
+
+
+
+BDD testcases
+
+Given Gmail login link                             https://gmail.com
+ Given the email ID and password            Enter Email ID and password
+Given click on submit                              It should login to gmail
+When clicked on compose,                      It should open a new frame to send the email
+And enter email addresses in To, CC       Please enter To address, CC 
+Then add Subject                                     Please enter subject
+And attach file                                         Attach the file by clicking on attch file option
+Then click on Send                                 
+Then a message should shown saying " message has been sent" 
+
